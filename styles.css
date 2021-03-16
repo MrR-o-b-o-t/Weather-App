@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Lato, sans-serif;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.nav {
+  transition: 0.3s all ease;
+  position: absolute;
+  width: 260px;
+  left: -260px;
+  height: 100%;
+  background: #27292F;
+  z-index: 9999;
+}
+.open {
+  left: 0px;
+}
+.menu {
+  list-style-type: none;
+}
+.menu__item {
+  font-size: 1.4rem;
+  color: #eee;
+  border-bottom: 1px solid #333;
+  padding: 1.2rem;
+  text-transform: uppercase;
+  transition: 0.3s all ease;
+}
+.menu__item:hover {
+  background: #111;
+  cursor: pointer;
+}
+/**** hamburger icon ****/
+.hamburger {
+  position: absolute;
+  top: 10px;
+  right: -50px;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+.hamburger span {
+  display: block;
+  background: #222;
+  margin: 6px 0;
+  height: 6px;
+  width: 36px;
+  border-radius: 2px;
+  position: relative;
+  transition: 0.3s;
+}
+.changeFirstBar {
+  top: 11px;
+  transform: rotate(45deg);
+}
+.changeSecondBar {
+  opacity: 0;
+}
+.changeThirdBar {
+  bottom: 13px;
+  transform: rotate(-45deg);
+}
+
+/********** Main Content *********/
+
+.content {
+  padding: 2rem;
+  transition: 0.3s all ease;
+}
+.shift {
+  margin-left: 260px;
+}
+
+.content__heading {
+  text-align: center;
+  padding: 2rem;
+}
+.content__details {
+  padding: 2rem;
+  letter-spacing: 1px;
+}
+.content__image {
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+}
