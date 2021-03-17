@@ -29,9 +29,7 @@ if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(position => {
     lon = position.coords.longitude;
     lat = position.coords.latitude;
-    let zip = 75078;
-
-    const api = `api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=${key}`
+    const api = `api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`
 
     fetch(api)
     .then(response => {

@@ -7,6 +7,11 @@
 }
 body {
   font-family: Lato, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+  color: white;
 }
 .container {
   max-width: 960px;
