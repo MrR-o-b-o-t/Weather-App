@@ -30,7 +30,7 @@ if(navigator.geolocation) {
     lon = position.coords.longitude;
     lat = position.coords.latitude;
     // const proxy = "https://cors-anywhere.herokuapp.com/";
-    const api = `api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`
+    const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`
     fetch(api)
     .then(response => {
         return response.json();
