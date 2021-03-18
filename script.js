@@ -21,29 +21,31 @@ weather.temperature = {
     unit : "celsius"
 }
 
-window.addEventListener("load", () => {
-let lon;
-let lat;
+// window.addEventListener("load", () => {
+// let lon;
+// let lat;
 
-if(navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(position => {
-    lon = position.coords.longitude;
-    lat = position.coords.latitude;
-    const api = `api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`
-
-    fetch(api)
-    .then(response => {
-        return response.json();
-    })
-    .then(data => {
-        console.log(data);
-        let fTemp = Math.floor(((data.main.temp) * 9/5) - 459.67);
-        console.log(data.weather);
-        document.querySelector(".dataValue").innerHTML = fTemp;
-    })
-  })
- }
-})
+// if(navigator.geolocation) {
+//     navigator.geolocation.getCurrentPosition(position => {
+//     lon = position.coords.longitude;
+//     lat = position.coords.latitude;
+//     const proxy = "https://cors-anywhere.herokuapp.com/";
+//     const api = `${proxy}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`
+//     fetch(api)
+//     .then(response => {
+//         return response.json();
+//     })
+//     .then(data => {
+//         console.log(data);
+//         let fTemp = Math.floor(((data.main.temp) * 9/5) - 459.67);
+//         let weatherMain = data.weather[0].main;
+//         console.log(data.weather[0].main);
+//         document.querySelector(".dataValue").innerHTML = fTemp;
+//         document.querySelector(".weather-main").innerHTML = weatherMain;
+//     })
+//   })
+//  }
+// })
 
 
 

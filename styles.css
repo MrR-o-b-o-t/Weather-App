@@ -10,12 +10,38 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
   color: white;
 }
-.container {
-  max-width: 960px;
-  margin: 0 auto;
+.location,
+.temp {
+  height: 20rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.temp{
+  flex-direction: column;
+}
+.deg-section{
+  display: flex;
+  align-items: center;
+}
+.deg-section span{
+  margin: 10px;
+  font-size: 30px;
+}
+.deg-section h2{
+  font-size: 40px;
+}
+.weatherInfo{
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .nav {
   transition: 0.3s all ease;
