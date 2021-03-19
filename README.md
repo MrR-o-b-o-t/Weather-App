@@ -11,16 +11,16 @@ _Weather App built with Vanilla JavaScript, HTML5, CSS3, the OpenWeather API and
 See it here: https://js-weather-app-wdj.herokuapp.com/
 <br>
 <br>
-<img src="images/wether-app.PNG">
+<img src="/images/weather-app.PNG">
   
 ## Summary
 
-I am contenuing to improve my JavaScript skills and ability to work with API's. This app is a simple forecast application that pulls information based
+I am continuing to improve my JavaScript skills and ability to work with API's. This app is a simple forecast application that pulls information based
 on your current location. That information is then displayed to the UI with some simple HTML and CSS and modified with vanilla JS. 
 
-My first attempt at working with an API was a Pomodoro Timer that I built (Check it out on my GitHub!). I decided to pull insperational quotes and 
+My first attempt at working with an API was a Pomodoro Timer that I built (Check it out on my GitHub!). I decided to pull inspirational quotes and 
 display them after every completion of the timer. The Pomodoro and this weather forecast application have been great at getting over the initial 
-fear of working with API's. I am not sure about you, but API's seemed intemidating at first. While I am by no means an expert at this point I am
+fear of working with API's. I am not sure about you, but API's seemed intimidating at first. While I am by no means an expert at this point I am
 much more comfortable and looking forward to building more complex projects that leverage API's soon! Keep an eye out for them (and the weather with
 this great app ;) soon!
 
