@@ -11,7 +11,7 @@ _Weather App built with Vanilla JavaScript, HTML5, CSS3, the OpenWeather API and
 See it here: https://js-weather-app-wdj.herokuapp.com/
 <br>
 <br>
-<img src="images/snakeGame.PNG">
+<img src="images/wether-app.PNG">
   
 ## Summary
 
