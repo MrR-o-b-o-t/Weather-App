@@ -19,7 +19,9 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+  background: #ff6e7f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ff6e7f, #bfe9ff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ff6e7f, #bfe9ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
 .location,
