@@ -31,23 +31,19 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: auto;
   }
 .location p{
   margin-left: 30px;
 }
 .temp{
   flex-direction: column;
+  width: auto;
 }
 .deg-section{
   display: flex;
   align-items: center;
   cursor: pointer;
-  /* -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; */
 }
 .deg-section span{
   margin: 10px;
@@ -121,7 +117,6 @@ body {
 }
 
 /********** Main Content *********/
-
 .content {
   padding: 2rem;
   transition: 0.3s all ease;
@@ -130,16 +125,3 @@ body {
   margin-left: 260px;
 }
 
-.content__heading {
-  text-align: center;
-  padding: 2rem;
-}
-.content__details {
-  padding: 2rem;
-  letter-spacing: 1px;
-}
-.content__image {
-  padding: 1rem;
-  width: 100%;
-  height: auto;
-}
