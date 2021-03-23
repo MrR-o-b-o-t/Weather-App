@@ -30,7 +30,7 @@ if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(position => {
     lon = position.coords.longitude;
     lat = position.coords.latitude;
-    const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`
+    const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`;
 
     fetch(api)
     .then(response => response.json())
@@ -43,7 +43,7 @@ if(navigator.geolocation) {
         let icon = myData.weather[0].icon;
         tempDegree.textContent = fTemp;
         tempDescription.textContent = weatherLocation;
-        tempIcon.src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+        tempIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
         localTimezone.textContent = myData.weather[0].description;
 
         temp.addEventListener("click", () => {
@@ -60,29 +60,33 @@ if(navigator.geolocation) {
  }
 })
 
-// document.querySelector(".zipSubmit").addEventListener("click", myFunction());
 
-// function myFunction() {
+// This doesn't work
+
+// document.querySelector(".zipSubmit").addEventListener("click", () => {
 //     let zip = document.querySelector("#zip").value;
+//     if(zip != undefined) {
 //     console.log(zip)
-//         const api = `https://api.openweathermap.org/data/2.5/weather?zip=75078,&appid=${key}`
-//         fetch(api)
-//         .then(response => response.json())
-    
-//         .then(data => {
-//             let myData = data;
-//             let fTemp = Math.floor(((myData.main.temp) * 9/5) - 459.67);
-//             let weatherLocation = myData.name;
-//             let icon = myData.weather[0].icon;
-//             tempDegree.textContent = fTemp;
-//             tempDescription.textContent = weatherLocation;
-//             tempIcon.src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
-//             localTimezone.textContent = myData.weather[0].description;    
-//             CtoF(fTemp);
-//         })
-// }
-    
-// function CtoF(temperature) {
+//     const api = `https://api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=${key}`
+        
+//     fetch(api)
+//     .then(response => response.json()) 
+
+//     .then(data => {
+//         let myData = data;
+//         let fTemp = Math.floor(((myData.main.temp) * 9/5) - 459.67);
+//         console.log(fTemp);
+//         let weatherLocation = myData.name;
+//         let icon = myData.weather[0].icon;
+//         tempDegree.textContent = fTemp;
+//         tempDescription.textContent = weatherLocation;
+//         tempIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+//         localTimezone.textContent = myData.weather[0].description;    
+//     })
+//     }
+// })
+
+// function CtoF() {
 //     console.log(temperature);
 //     let cTemp = Math.floor((temperature - 32) / 1.8000);  
 //         if(tempSpan.textContent === "F") {
