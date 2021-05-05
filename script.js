@@ -31,10 +31,8 @@ async function submitPost(e) {
   if (zip != undefined) {
     console.log(zip);
     const api = `https://api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=${key}`;
-
     fetch(api)
       .then((response) => response.json())
-
       .then((data) => {
         let myData = data;
         fTemp = Math.floor((myData.main.temp * 9) / 5 - 459.67);

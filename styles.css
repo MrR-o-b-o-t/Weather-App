@@ -67,6 +67,11 @@ body {
   background: #27292F;
   z-index: 9999;
 }
+.nav li a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
 .open {
   left: 0px;
 }
